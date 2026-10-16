@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Shyam Traders | UltraTech Cement Authorized Dealer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ultratech: {
+                            yellow: '#FFB800',
+                            darkYellow: '#E0A200',
+                            black: '#111111',
+                            slate: '#1E232A',
+                            gray: '#2A303C',
+                            accent: '#FFD700'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(30, 35, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 184, 0, 0.15);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-bg-gradient {
+            background: linear-gradient(135deg, #FFB800 0%, #FF8C00 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#0D0F12] text-gray-100 font-sans antialiased selection:bg-ultratech-yellow selection:text-black">
+
+    <!-- TOP HEADER BAR -->
+    <div class="bg-ultratech-yellow text-black font-semibold py-2 px-4 text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-certificate text-red-700 mr-1"></i> Authorised UltraTech Cement Dealer</span>
+                <span class="hidden md:inline">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-truck-fast mr-1"></i> Fast Direct Site Delivery</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+917454094502" class="hover:underline font-bold"><i class="fa-solid fa-phone"></i> +91 74540 94502</a>
+                <span>|</span>
+                <span><i class="fa-solid fa-user-shield"></i> Prop: Anmol Sharma</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-[#111418]/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="bg-ultratech-yellow text-black font-black text-2xl px-3 py-1 rounded tracking-wider shadow-lg">
+                        ULTRA
+                    </div>
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-white leading-none">SHREE SHYAM <span class="text-ultratech-yellow">TRADERS</span></h1>
+                        <p class="text-[10px] text-gray-400 tracking-widest uppercase mt-0.5">Building The Future Together</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="hover:text-ultratech-yellow transition-colors">About Us</a>
+                    <a href="#products" class="hover:text-ultratech-yellow transition-colors">Products</a>
+                    <a href="#calculator" class="hover:text-ultratech-yellow transition-colors">Cement Calculator</a>
+                    <a href="#contact" class="hover:text-ultratech-yellow transition-colors">Contact Us</a>
+                    <a href="https://wa.me/917454094502?text=Namaste%20Anmol%20Bhaiya,%20mujhe%20UltraTech%20Cement%20ki%20inquiry%20karni%20hai." 
+                       target="_blank" 
+                       class="gold-bg-gradient text-black font-bold px-5 py-2.5 rounded-full shadow-lg hover:brightness-110 transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Order Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-2xl text-ultratech-yellow">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-ultratech-slate border-b border-gray-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-gray-200 border-b border-gray-700/50">About Us</a>
+            <a href="#products" class="block py-2 text-gray-200 border-b border-gray-700/50">Products</a>
+            <a href="#calculator" class="block py-2 text-gray-200 border-b border-gray-700/50">Cement Calculator</a>
+            <a href="#contact" class="block py-2 text-gray-200 border-b border-gray-700/50">Contact Us</a>
+            <a href="https://wa.me/917454094502?text=Namaste%20Anmol%20Bhaiya,%20mujhe%20UltraTech%20Cement%20ki%20inquiry%20karni%20hai." 
+               target="_blank" 
+               class="gold-bg-gradient text-black font-bold py-3 rounded-lg text-center flex justify-center items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Order
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-20 md:py-32 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(13, 15, 18, 0.95), rgba(13, 15, 18, 0.7)), url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?q=80&w=1600&auto=format&fit=crop');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-ultratech-yellow/20 text-ultratech-yellow border border-ultratech-yellow/40 font-semibold px-4 py-1.5 rounded-full text-xs md:text-sm uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-shield-halved mr-1"></i> 100% Original & Direct Factory Supply
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                    "Engineers Ki Pehli Pasand" <br>
+                    <span class="gold-gradient-text">UltraTech Cement</span>
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed">
+                    Aapke sapno ke ghar ko de sabse majboot buniyaad. **Shree Shyam Traders** se lein 100% asli UltraTech Cement, wholesale rate aur sabse fast site delivery ke saath.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/917454094502?text=Namaste%20Anmol%20Bhaiya,%20mujhe%20cement%20ka%20rate%20chahiye." 
+                       target="_blank" 
+                       class="gold-bg-gradient text-black font-extrabold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-all text-base flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Direct Rates Pe Poochein
+                    </a>
+                    <a href="tel:+917454094502" 
+                       class="bg-gray-800 hover:bg-gray-700 text-white font-bold px-8 py-4 rounded-xl border border-gray-700 transition-all text-base flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-ultratech-yellow"></i> Call Anmol Sharma
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OWNER FEATURE / ABOUT SECTION -->
+    <section id="about" class="py-16 md:py-24 bg-[#111418]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Owner Image Card -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-ultratech-yellow to-amber-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative rounded-3xl overflow-hidden border border-gray-800 bg-ultratech-slate">
+                        <!-- Path set to b.jpg -->
+                        <img src="b.jpg" alt="Anmol Sharma - Shree Shyam Traders" class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop';">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 text-white">
+                            <span class="text-xs font-bold uppercase tracking-widest text-ultratech-yellow">Proprietor</span>
+                            <h3 class="text-2xl font-bold">ANMOL SHARMA</h3>
+                            <p class="text-gray-300 text-sm">Shree Shyam Traders</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <span class="text-ultratech-yellow font-bold uppercase tracking-wider text-sm">Welcome To Shree Shyam Traders</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-6">
+                        Aapke Nirman Mein Humara Vishwas!
+                    </h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        **Shree Shyam Traders** me hum pichle kai saalo se aapke sapno ke ghar, commercial buildings, aur construction projects ke liye **UltraTech Cement** ki 100% genuine supply de rahe hain. 
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-ultratech-slate/50 border border-gray-800">
+                            <div class="bg-ultratech-yellow/20 p-3 rounded-lg text-ultratech-yellow text-xl">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Direct Factory Supply</h4>
+                                <p class="text-gray-400 text-sm">Bina kisi bicholiye ke seedhe fresh stock aapke construction site tak.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-ultratech-slate/50 border border-gray-800">
+                            <div class="bg-ultratech-yellow/20 p-3 rounded-lg text-ultratech-yellow text-xl">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Best Market Wholesale Rates</h4>
+                                <p class="text-gray-400 text-sm">Bulks orders par special discount aur best rates ki guarantee.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/917454094502?text=Namaste%20Anmol%20Bhaiya,%20mujhe%20dukan%20ka%20location%20aur%20rate%20chahiye." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-ultratech-yellow font-bold hover:underline">
+                        Anmol Bhaiya Se Connect Karein <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="py-16 md:py-24 bg-[#0D0F12]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-ultratech-yellow font-bold uppercase tracking-wider text-sm">UltraTech Products</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2">Humare Top Cement Products</h2>
+                <p class="text-gray-400 mt-3">Har prakaar ke construction ke liye UltraTech ka sabse behtar variant chunein.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-ultratech-yellow transition duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="h-48 rounded-xl bg-gray-800 overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop" alt="UltraTech Super" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-ultratech-yellow text-black font-extrabold text-xs px-3 py-1 rounded-full">BEST SELLER</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">UltraTech SUPER</h3>
+                        <p class="text-gray-400 text-sm mb-4">PCC PPC Specially Engineered cement providing high density and strength for slab & RCC works.</p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-circle-check text-ultratech-yellow mr-2"></i> Faster setting time</li>
+                            <li><i class="fa-solid fa-circle-check text-ultratech-yellow mr-2"></i> High Crack Resistance</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/917454094502?text=Anmol%20Bhaiya,%20UltraTech%20SUPER%20ka%20rate%20batayein." target="_blank" class="w-full gold-bg-gradient text-black font-bold py-3 rounded-xl text-center block hover:brightness-110">Inquire Price</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-ultratech-yellow transition duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="h-48 rounded-xl bg-gray-800 overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="UltraTech Weather Plus" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-amber-500 text-black font-extrabold text-xs px-3 py-1 rounded-full">WATERPROOF</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">UltraTech Weather Plus</h3>
+                        <p class="text-gray-400 text-sm mb-4">Water-repellent technology that guards your house from dampness and water seepage.</p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-circle-check text-ultratech-yellow mr-2"></i> Anti-Dampness Formula</li>
+                            <li><i class="fa-solid fa-circle-check text-ultratech-yellow mr-2"></i> Protection against rust</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/917454094502?text=Anmol%20Bhaiya,%20UltraTech%20Weather%20Plus%20ka%20rate%20batayein." target="_blank" class="w-full gold-bg-gradient text-black font-bold py-3 rounded-xl text-center block hover:brightness-110">Inquire Price</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-ultratech-yellow transition duration-300 flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="h-48 rounded-xl bg-gray-800 overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop" alt="UltraTech PPC/OPC 53" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-gray-700 text-white font-extrabold text-xs px-3 py-1 rounded-full">HEAVY DUTY</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">UltraTech PPC / OPC 53</h3>
+                        <p class="text-gray-400 text-sm mb-4">Standard high performance cement ideal for all general masonry, plastering & foundations.</p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-circle-check text-ultratech-yellow mr-2"></i> Optimum strength development</li>
+                            <li><i class="fa-solid fa-circle-check text-ultratech-yellow mr-2"></i> Smooth finish for plaster</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/917454094502?text=Anmol%20Bhaiya,%20UltraTech%20PPC/OPC%2053%20ka%20rate%20batayein." target="_blank" class="w-full gold-bg-gradient text-black font-bold py-3 rounded-xl text-center block hover:brightness-110">Inquire Price</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEMENT CALCULATOR -->
+    <section id="calculator" class="py-16 md:py-24 bg-[#111418]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-8 md:p-12 rounded-3xl border border-ultratech-yellow/30">
+                <div class="text-center mb-8">
+                    <span class="text-ultratech-yellow font-bold uppercase tracking-wider text-xs">Smart Tool</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-1">Cement Requirement Calculator</h2>
+                    <p class="text-gray-400 text-sm mt-1">Aapke area (sq. ft.) ke hisab se cement ki boriya calculate karein.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-gray-300 text-sm font-semibold mb-2">Construction Area (Sq. Ft.)</label>
+                        <input type="number" id="sqft-input" placeholder="e.g. 1000" class="w-full bg-gray-900 border border-gray-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-ultratech-yellow">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 text-sm font-semibold mb-2">Work Type</label>
+                        <select id="work-type" class="w-full bg-gray-900 border border-gray-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-ultratech-yellow">
+                            <option value="slab">Roof Slab Casting (Lanter)</option>
+                            <option value="brick">Brickwork Masonry</option>
+                            <option value="plaster">Plaster Work</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button onclick="calculateCement()" class="w-full gold-bg-gradient text-black font-bold py-3.5 rounded-xl text-center text-lg hover:brightness-110 transition">
+                    Calculate Bags Needed
+                </button>
+
+                <div id="calc-result" class="hidden mt-8 p-6 bg-gray-900/80 rounded-2xl border border-gray-700 text-center">
+                    <p class="text-gray-400 text-sm">Estimated UltraTech Cement Bags:</p>
+                    <h3 id="bags-count" class="text-4xl font-extrabold text-ultratech-yellow my-2">0 Bags</h3>
+                    <p class="text-xs text-gray-500 mb-6">*Approximate estimation based on standard construction standards.</p>
+                    
+                    <a id="calc-whatsapp-btn" href="#" target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded-xl">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Order These Bags On WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <footer id="contact" class="bg-[#0A0C0E] border-t border-gray-800 pt-16 pb-12 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">SHREE SHYAM TRADERS</h3>
+                    <p class="text-sm text-gray-400 mb-4">
+                        UltraTech Cement Authorised Dealer. High quality cement, direct mill supply, and prompt delivery services.
+                    </p>
+                    <p class="text-sm font-bold text-ultratech-yellow">Owner: Anmol Sharma</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact Details</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-ultratech-yellow"></i>
+                            <a href="tel:+917454094502" class="hover:text-white">+91 74540 94502</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-green-500"></i>
+                            <a href="https://wa.me/917454094502" target="_blank" class="hover:text-white">+91 74540 94502</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-ultratech-yellow mt-1"></i>
+                            <span>Shree Shyam Traders, Main Market, Direct Site Delivery Available</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Order</h4>
+                    <p class="text-sm mb-4">Aap WhatsApp par seedhe Anmol Sharma se sampark kar sakte hain.</p>
+                    <a href="https://wa.me/917454094502?text=Namaste%20Anmol%20Bhaiya,%20mujhe%20Shree%20Shyam%20Traders%20se%20cement%20order%20karna%20hai." 
+                       target="_blank" 
+                       class="inline-block gold-bg-gradient text-black font-bold px-6 py-3 rounded-xl">
+                        <i class="fa-brands fa-whatsapp mr-2"></i> Contact On WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026 Shree Shyam Traders (UltraTech Cement Dealer). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/917454094502?text=Namaste%20Anmol%20Bhaiya,%20mujhe%20cement%20ke%20rate%20puchne%20hain." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-50 flex items-center justify-center">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cement Calculator logic
+        function calculateCement() {
+            const sqft = parseFloat(document.getElementById('sqft-input').value);
+            const workType = document.getElementById('work-type').value;
+
+            if (!sqft || sqft <= 0) {
+                alert('Kripya sahi Square Feet area dalein.');
+                return;
+            }
+
+            let multiplier = 0.4; // Default multiplier
+            if (workType === 'slab') multiplier = 0.45;
+            if (workType === 'brick') multiplier = 0.12;
+            if (workType === 'plaster') multiplier = 0.15;
+
+            const totalBags = Math.ceil(sqft * multiplier);
+
+            document.getElementById('bags-count').innerText = `${totalBags} Bags`;
+            document.getElementById('calc-result').classList.remove('hidden');
+
+            // Set WhatsApp URL with dynamic order
+            const msg = `Namaste Anmol Bhaiya, mera construction area ${sqft} sq ft hai. Mujhe lagbhag ${totalBags} UltraTech Cement bags ki zaroorat hai. Please rate aur delivery time batayein.`;
+            document.getElementById('calc-whatsapp-btn').href = `https://wa.me/917454094502?text=${encodeURIComponent(msg)}`;
+        }
+    </script>
+</body>
+</html>
